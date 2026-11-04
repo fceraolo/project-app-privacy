@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Project Bacheca: informativa sulla privacy</title>
+<meta name="description" content="Informativa sulla privacy dell'app Project Bacheca per Android: nessun dato raccolto, i dati restano sul telefono e nelle copie che crei tu.">
+<style>
+  :root { --bg:#fff; --fg:#1b1f24; --muted:#5b6672; --line:#d9dee4; --accent:#2563eb; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#14181c; --fg:#e8ecef; --muted:#9aa5b1; --line:#2a3138; --accent:#7aa2f7; }
+  }
+  html { background: var(--bg); }
+  body { margin:0; padding:0 16px; background:var(--bg); color:var(--fg);
+         font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif; }
+  main { max-width: 42rem; margin: 0 auto; padding: 32px 0 64px; }
+  h1 { font-size: 1.6rem; line-height: 1.25; margin: 0 0 4px; }
+  h2 { font-size: 1.15rem; margin: 2rem 0 .4rem; color: var(--accent); }
+  p, li { margin: .5rem 0; }
+  ul { padding-left: 1.2rem; }
+  .meta { color: var(--muted); margin: 0 0 1.5rem; }
+  .box { border:1px solid var(--line); border-radius:10px; padding: 4px 16px; margin: 1rem 0; }
+  a { color: var(--accent); }
+</style>
+</head>
+<body>
+<main>
+  <h1>Project Bacheca: informativa sulla privacy</h1>
+  <p class="meta">App per Android · Ultimo aggiornamento: 4 novembre 2026</p>
+
+  <div class="box">
+    <p><strong>In breve</strong></p>
+    <ul>
+      <li>Project (Project Bacheca) <strong>non raccoglie, non invia e non condivide</strong> alcun dato.</li>
+      <li>Non serve un account. Non ci sono pubblicità, statistiche d'uso, analisi degli arresti anomali né servizi di terze parti.</li>
+      <li>L'app <strong>non usa Internet</strong>: non richiede nemmeno il permesso di accedere alla rete.</li>
+      <li>Tutto ciò che inserisci resta <strong>sul tuo telefono</strong>, nella memoria privata dell'app. Le uniche copie che possono esistere altrove sono quelle che crei tu: un file esportato, oppure il backup di Android del tuo account Google, se lo hai attivo.</li>
+    </ul>
+  </div>
+
+  <h2>Chi è lo sviluppatore</h2>
+  <p>L'app è pubblicata da <strong>philips89</strong> (sviluppatore individuale).
+     Per domande sulla privacy: <a href="mailto:philips89.developer@gmail.com">philips89.developer@gmail.com</a>.</p>
+
+  <h2>Quali dati conserva l'app, e dove</h2>
+  <p>Sul tuo dispositivo l'app conserva:</p>
+  <ul>
+    <li>i <strong>progetti</strong> e i <strong>sottoprogetti</strong> che crei e i loro <strong>stati</strong>;</li>
+    <li>i <strong>task</strong>: titolo, descrizione facoltativa, progetto, stato ed <strong>etichette</strong>;</li>
+    <li>i <strong>promemoria</strong>: testo, data e ora, eventuale ripetizione, task collegato;</li>
+    <li>le <strong>impostazioni</strong>: tema e se il blocco dell'app è attivo.</li>
+  </ul>
+  <p>Lo sviluppatore non ha alcun accesso a questi dati: non esistono server di Project.</p>
+
+  <h2>Blocco dell'app e biometria</h2>
+  <p>Se attivi il blocco, l'app usa lo sblocco di Android: impronta, volto oppure il PIN, la sequenza o la
+     password del telefono. Il riconoscimento è svolto interamente da Android: l'app riceve solo l'esito
+     (riuscito o non riuscito) e non vede né conserva dati biometrici o codici.</p>
+
+  <h2>Backup ed esportazione</h2>
+  <ul>
+    <li><strong>Backup di Android.</strong> L'app non invia nulla a nessuno. Se sul telefono hai attivo il backup di Android, il sistema include il database di Project nel backup del <strong>tuo account Google</strong>, come fa per le altre app, e lo usa per riportare i dati su un telefono nuovo. Lo sviluppatore non ha accesso a questo backup. Puoi disattivarlo dalle impostazioni di Android (<em>Impostazioni → Google → Backup</em>; il percorso può cambiare secondo il telefono). Nel backup entra solo il database dell'app, non i file che esporti.</li>
+    <li>Puoi esportare i dati quando vuoi da <em>Impostazioni → Backup e dati</em>: un file JSON, facoltativamente
+        <strong>cifrato con una passphrase</strong> scelta da te (AES-256-GCM), oppure un file CSV con task e promemoria. Il file viene
+        consegnato al pannello di condivisione di Android: sei tu a decidere dove salvarlo o a chi inviarlo. Da quel
+        momento il file è sotto la tua responsabilità e segue le regole del servizio che scegli (per esempio Google Drive o la posta elettronica).</li>
+    <li>Un backup non cifrato è leggibile da chiunque lo ottenga.</li>
+    <li>La passphrase non può essere recuperata: se la dimentichi, il file cifrato non si può aprire.</li>
+  </ul>
+
+  <h2>Come cancellare i dati</h2>
+  <ul>
+    <li>Dall'app: <em>Impostazioni → Backup e dati → Cancella tutti i dati</em>.</li>
+    <li>Da Android: <em>Impostazioni → App → Project → Spazio di archiviazione → Cancella dati</em>, oppure disinstalla l'app.</li>
+  </ul>
+  <p>La cancellazione è definitiva: lo sviluppatore non ha copie. Restano solo le copie che hai creato tu: i file esportati e, se attivo, il backup di Android nel tuo account Google (si gestisce da <em>Impostazioni → Google → Backup</em> o dall'app Google One).</p>
+
+  <h2>Permessi</h2>
+  <p><strong>Notifiche</strong> (<code>POST_NOTIFICATIONS</code>, Android 13 e successivi): chiesto quando salvi il primo promemoria.
+     Il promemoria è una notifica locale, programmata sul telefono dall'app: nessun server e nessun servizio di notifiche
+     lo invia. Puoi negarlo o revocarlo in qualsiasi momento: l'app funziona lo stesso, senza promemoria.</p>
+  <p><strong>Allarmi e promemoria</strong> (<code>SCHEDULE_EXACT_ALARM</code>): permette ad Android di far suonare il promemoria
+     all'ora esatta. Lo concedi tu dalle impostazioni di Android; senza, i promemoria possono arrivare in ritardo.</p>
+  <p>Il sistema registra inoltre alcuni permessi "normali", concessi automaticamente da Android: <code>USE_BIOMETRIC</code> (e, per
+     le versioni di Android meno recenti, <code>USE_FINGERPRINT</code>) per lo sblocco con impronta o volto;
+     <code>RECEIVE_BOOT_COMPLETED</code> e <code>WAKE_LOCK</code> per riprogrammare i promemoria dopo un riavvio del telefono.
+     L'app non ha accesso a Internet, contatti, posizione, fotocamera, microfono o file del telefono.</p>
+
+  <h2>Minori</h2>
+  <p>Project non è rivolta ai bambini e non raccoglie dati di alcuna persona.</p>
+
+  <h2>I tuoi diritti</h2>
+  <p>Poiché lo sviluppatore non tratta dati personali degli utenti, non può accedervi, correggerli o cancellarli:
+     puoi farlo direttamente tu nell'app. Per qualunque domanda scrivi all'indirizzo indicato sopra.</p>
+
+  <h2>Modifiche</h2>
+  <p>Eventuali modifiche a questa informativa saranno pubblicate a questo indirizzo con la nuova data.
+     Se in futuro l'app dovesse usare la rete o servizi esterni, l'informativa sarà aggiornata prima del rilascio.</p>
+</main>
+</body>
+</html>
